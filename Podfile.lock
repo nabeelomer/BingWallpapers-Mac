@@ -1,0 +1,20 @@
+PODS:
+  - Fire (3.3.4):
+    - Jsonify
+  - Jsonify (2.1.0)
+
+DEPENDENCIES:
+  - Fire
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Fire
+    - Jsonify
+
+SPEC CHECKSUMS:
+  Fire: 41331f37e920cc5bba5d67b0111c1925e0ac600e
+  Jsonify: 43c28e11077031c829575ef47c1461208a2fc420
+
+PODFILE CHECKSUM: 51bb39b5b910fe6624c82caf130d2914281aaadf
+
+COCOAPODS: 1.5.0

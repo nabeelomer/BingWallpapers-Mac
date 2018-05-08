@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0598C5EBA881C5538DD970059CC6B89E /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9AC538103355432E92DDEBAB12DF0D /* Values.swift */; };
+		0B9EC4FEE4393C7EA863CA95E281C3ED /* Fire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 452DA2137F1D18831CFA329EB39EC0DA /* Fire-dummy.m */; };
+		272E51D0F30697490F79318ADD99688B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E43DCD659588CD4ECACBA2636E00F25 /* Cocoa.framework */; };
+		283189D922874E4F3DAA6337EB2E010D /* JsonifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D48ED0D8081E2524A1B91E8744EE8D2 /* JsonifyModel.swift */; };
+		3D2F361C65FC6970DC3DFCDE8A64198C /* Jsonify.h in Headers */ = {isa = PBXBuildFile; fileRef = D3DD7628E0E17FCDB7946682A326BDD7 /* Jsonify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40DEDFD01DF61C2EB76F4B0F5164FCB1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E43DCD659588CD4ECACBA2636E00F25 /* Cocoa.framework */; };
+		4314A7A6E4D392F73FAB6FC1E3957E3D /* FileDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D06FA5AC7291485765CA2836C469B27 /* FileDescriptor.swift */; };
+		4A9A6A5FABDB98E1E1529C84F3ED7F2B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E43DCD659588CD4ECACBA2636E00F25 /* Cocoa.framework */; };
+		5836ED0ECD78FECE601A4E2E9C066FDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FAB2118D22CFD15271E990B43E49D3 /* Foundation.framework */; };
+		5D538741F9C5B67DE8B4B4B0C65E87FD /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACFDFBB346F19DBE2F691D7667F82DD /* Fire.swift */; };
+		7CB703A2B3341A9BF29F2095A71FDEED /* Jsonify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543FBA34B94D11394AD4B763A01048AC /* Jsonify.swift */; };
+		8CB96DFC209E80A9FB2135179B70F821 /* Jsonify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE46D6F10AA811A7949CD6E47A0B58DE /* Jsonify-dummy.m */; };
+		9BBCA9FAB33A27B535EB4584B90AABB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FAB2118D22CFD15271E990B43E49D3 /* Foundation.framework */; };
+		B66E7CD264C61F78AB2771C3006EA843 /* Fire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD205D6A0AC5327FA4EEC4EDE69CB84B /* Fire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C10EF443122ECA593D5246E6ED0B2B34 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7A996B9BDD9FAFD05FFC6B017235A /* Helper.swift */; };
+		C40F278C1C2BEF01F5566609223BA9DA /* Fire.h in Headers */ = {isa = PBXBuildFile; fileRef = FB770E6A617F8FCC9F79585000BF21F4 /* Fire.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C41B010DA6E2FB83E9402E369942C0B4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C418124BBCF3A4F9126B55F5D808EF8E /* API.swift */; };
+		CB75AD2EA7BE6531025F7451AEA6771D /* Jsonify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFB4865FDA94465D0A3C11786D18AB3 /* Jsonify.framework */; };
+		D6DEE49F3E0FAB6B2F9F4AE5A3973DD2 /* Pods-BingWallpapers-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F7D529F31067B5FEF4A22D2229C3FF /* Pods-BingWallpapers-dummy.m */; };
+		F03619D724D5F2450111614C852C13F2 /* Pods-BingWallpapers-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EA21BA9F4293B3A19489C8ED9F7195 /* Pods-BingWallpapers-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F38D1E0ADB35BBA5907F4AD99997AEBE /* Jsonify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C8580B829AD8386B684E007ED3BA67B /* Jsonify-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57696D79BC2658686FE630AC3773A1A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FCBA89BA6358AB0865AB1C0A2FAA068;
+			remoteInfo = Jsonify;
+		};
+		9D8A5B4D64D272C18BD4F20B71883196 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B08483700D1B47E58D93084F28C230;
+			remoteInfo = Fire;
+		};
+		E4B17659FBF092ED67FED8BF4115BE26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FCBA89BA6358AB0865AB1C0A2FAA068;
+			remoteInfo = Jsonify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BE4B5A3C10781815110F45AF538C9B1 /* Pods-BingWallpapers.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BingWallpapers.modulemap"; sourceTree = "<group>"; };
+		0C8580B829AD8386B684E007ED3BA67B /* Jsonify-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Jsonify-umbrella.h"; sourceTree = "<group>"; };
+		14BEA5FC86F4D98E6259C15BC8AA0D53 /* Fire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fire.framework; path = Fire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17EA21BA9F4293B3A19489C8ED9F7195 /* Pods-BingWallpapers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BingWallpapers-umbrella.h"; sourceTree = "<group>"; };
+		2A54492F52BDE43CD7A7D809127FC0CE /* Jsonify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Jsonify.modulemap; sourceTree = "<group>"; };
+		34B688E71E5D71DF72FBD2983D93CEF6 /* Pods-BingWallpapers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BingWallpapers.release.xcconfig"; sourceTree = "<group>"; };
+		37FE059F29BFF73C4654FB0D5A61BFA5 /* Jsonify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Jsonify.framework; path = Jsonify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		452DA2137F1D18831CFA329EB39EC0DA /* Fire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Fire-dummy.m"; sourceTree = "<group>"; };
+		4EC85C0B955DFB8641164FF6950587C3 /* Pods-BingWallpapers-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BingWallpapers-resources.sh"; sourceTree = "<group>"; };
+		4F7ADDE4355ED57E874354538E1A8F9A /* Jsonify.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Jsonify.xcconfig; sourceTree = "<group>"; };
+		543FBA34B94D11394AD4B763A01048AC /* Jsonify.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Jsonify.swift; path = Jsonify/Jsonify.swift; sourceTree = "<group>"; };
+		5684B343F52754D952BF752EDE83C0C9 /* Pods-BingWallpapers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BingWallpapers.debug.xcconfig"; sourceTree = "<group>"; };
+		5A83AB7B26690579CA373F946CFFE8EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D06FA5AC7291485765CA2836C469B27 /* FileDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileDescriptor.swift; path = Fire/FileDescriptor.swift; sourceTree = "<group>"; };
+		66A50A2971C77106E69D5965F5EC7241 /* Fire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fire.xcconfig; sourceTree = "<group>"; };
+		6B1D7DC72387DE7A0A4D037B9D1A1D93 /* Pods-BingWallpapers-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BingWallpapers-frameworks.sh"; sourceTree = "<group>"; };
+		6D48ED0D8081E2524A1B91E8744EE8D2 /* JsonifyModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonifyModel.swift; path = Jsonify/JsonifyModel.swift; sourceTree = "<group>"; };
+		6E43DCD659588CD4ECACBA2636E00F25 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		6F749A15F9E7345B25714D65C4343B9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AF9AC538103355432E92DDEBAB12DF0D /* Values.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Values.swift; path = Fire/Values.swift; sourceTree = "<group>"; };
+		B0F7A996B9BDD9FAFD05FFC6B017235A /* Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Fire/Helper.swift; sourceTree = "<group>"; };
+		B3FAB2118D22CFD15271E990B43E49D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B7F7D529F31067B5FEF4A22D2229C3FF /* Pods-BingWallpapers-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BingWallpapers-dummy.m"; sourceTree = "<group>"; };
+		BAB4EE96E7334EE6E883B9EF5177029D /* Fire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Fire.modulemap; sourceTree = "<group>"; };
+		BD205D6A0AC5327FA4EEC4EDE69CB84B /* Fire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fire-umbrella.h"; sourceTree = "<group>"; };
+		C347611B9DA3036446B6F7EB16AEF037 /* Pods_BingWallpapers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BingWallpapers.framework; path = "Pods-BingWallpapers.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C418124BBCF3A4F9126B55F5D808EF8E /* API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = API.swift; path = Fire/API.swift; sourceTree = "<group>"; };
+		D3DD7628E0E17FCDB7946682A326BDD7 /* Jsonify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Jsonify.h; path = Jsonify/Jsonify.h; sourceTree = "<group>"; };
+		DAEE2A3203CBEAFE3F8B75638461FE04 /* Fire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fire-prefix.pch"; sourceTree = "<group>"; };
+		DE46D6F10AA811A7949CD6E47A0B58DE /* Jsonify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Jsonify-dummy.m"; sourceTree = "<group>"; };
+		E3CBA5C4CB3CD1DCABAC4B3960E75B9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EACFDFBB346F19DBE2F691D7667F82DD /* Fire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fire.swift; path = Fire/Fire.swift; sourceTree = "<group>"; };
+		ECFB4865FDA94465D0A3C11786D18AB3 /* Jsonify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jsonify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EF8378FC017C9E37E31499B1B2AB68 /* Pods-BingWallpapers-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BingWallpapers-acknowledgements.plist"; sourceTree = "<group>"; };
+		F5FF755F47C6A4864D50E77EA11F7AFA /* Pods-BingWallpapers-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BingWallpapers-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F6E295BF7F777BCDBD82847BAF2B3EFC /* Jsonify-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Jsonify-prefix.pch"; sourceTree = "<group>"; };
+		FB770E6A617F8FCC9F79585000BF21F4 /* Fire.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fire.h; path = Fire/Fire.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1176A53FD6F3E81D68EF18EF1CD10E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DEDFD01DF61C2EB76F4B0F5164FCB1 /* Cocoa.framework in Frameworks */,
+				5836ED0ECD78FECE601A4E2E9C066FDB /* Foundation.framework in Frameworks */,
+				CB75AD2EA7BE6531025F7451AEA6771D /* Jsonify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507431033B306B25C1A58AC15B5A74E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272E51D0F30697490F79318ADD99688B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97577631202AB658AEE841A5802F98C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9A6A5FABDB98E1E1529C84F3ED7F2B /* Cocoa.framework in Frameworks */,
+				9BBCA9FAB33A27B535EB4584B90AABB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05436882CE7437FEC46CC965A9F85CCD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F749A15F9E7345B25714D65C4343B9A /* Info.plist */,
+				2A54492F52BDE43CD7A7D809127FC0CE /* Jsonify.modulemap */,
+				4F7ADDE4355ED57E874354538E1A8F9A /* Jsonify.xcconfig */,
+				DE46D6F10AA811A7949CD6E47A0B58DE /* Jsonify-dummy.m */,
+				F6E295BF7F777BCDBD82847BAF2B3EFC /* Jsonify-prefix.pch */,
+				0C8580B829AD8386B684E007ED3BA67B /* Jsonify-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Jsonify";
+			sourceTree = "<group>";
+		};
+		244C186B8B049D96E4CD70D0135D8399 /* Fire */ = {
+			isa = PBXGroup;
+			children = (
+				C418124BBCF3A4F9126B55F5D808EF8E /* API.swift */,
+				5D06FA5AC7291485765CA2836C469B27 /* FileDescriptor.swift */,
+				FB770E6A617F8FCC9F79585000BF21F4 /* Fire.h */,
+				EACFDFBB346F19DBE2F691D7667F82DD /* Fire.swift */,
+				B0F7A996B9BDD9FAFD05FFC6B017235A /* Helper.swift */,
+				AF9AC538103355432E92DDEBAB12DF0D /* Values.swift */,
+				793F3413F02AAD40EFF516DEA6E89536 /* Support Files */,
+			);
+			name = Fire;
+			path = Fire;
+			sourceTree = "<group>";
+		};
+		443EA361FD0C374F8D3B2DA1FCDA8281 /* Pods-BingWallpapers */ = {
+			isa = PBXGroup;
+			children = (
+				5A83AB7B26690579CA373F946CFFE8EF /* Info.plist */,
+				0BE4B5A3C10781815110F45AF538C9B1 /* Pods-BingWallpapers.modulemap */,
+				F5FF755F47C6A4864D50E77EA11F7AFA /* Pods-BingWallpapers-acknowledgements.markdown */,
+				F5EF8378FC017C9E37E31499B1B2AB68 /* Pods-BingWallpapers-acknowledgements.plist */,
+				B7F7D529F31067B5FEF4A22D2229C3FF /* Pods-BingWallpapers-dummy.m */,
+				6B1D7DC72387DE7A0A4D037B9D1A1D93 /* Pods-BingWallpapers-frameworks.sh */,
+				4EC85C0B955DFB8641164FF6950587C3 /* Pods-BingWallpapers-resources.sh */,
+				17EA21BA9F4293B3A19489C8ED9F7195 /* Pods-BingWallpapers-umbrella.h */,
+				5684B343F52754D952BF752EDE83C0C9 /* Pods-BingWallpapers.debug.xcconfig */,
+				34B688E71E5D71DF72FBD2983D93CEF6 /* Pods-BingWallpapers.release.xcconfig */,
+			);
+			name = "Pods-BingWallpapers";
+			path = "Target Support Files/Pods-BingWallpapers";
+			sourceTree = "<group>";
+		};
+		761019B7C4A2F37B8EA406348D16FDD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14BEA5FC86F4D98E6259C15BC8AA0D53 /* Fire.framework */,
+				37FE059F29BFF73C4654FB0D5A61BFA5 /* Jsonify.framework */,
+				C347611B9DA3036446B6F7EB16AEF037 /* Pods_BingWallpapers.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		793F3413F02AAD40EFF516DEA6E89536 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAB4EE96E7334EE6E883B9EF5177029D /* Fire.modulemap */,
+				66A50A2971C77106E69D5965F5EC7241 /* Fire.xcconfig */,
+				452DA2137F1D18831CFA329EB39EC0DA /* Fire-dummy.m */,
+				DAEE2A3203CBEAFE3F8B75638461FE04 /* Fire-prefix.pch */,
+				BD205D6A0AC5327FA4EEC4EDE69CB84B /* Fire-umbrella.h */,
+				E3CBA5C4CB3CD1DCABAC4B3960E75B9E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Fire";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D8C4CAEE4C30E8518A7D7412F598CB12 /* Frameworks */,
+				D0910E5B2DF10BEF3A5F85DDACB277AB /* Pods */,
+				761019B7C4A2F37B8EA406348D16FDD9 /* Products */,
+				8024CC3FAA4B32A75F3B314A3DB2094B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8024CC3FAA4B32A75F3B314A3DB2094B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				443EA361FD0C374F8D3B2DA1FCDA8281 /* Pods-BingWallpapers */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		92A8E38C3C056549CB87EDBFBE9381E9 /* Jsonify */ = {
+			isa = PBXGroup;
+			children = (
+				D3DD7628E0E17FCDB7946682A326BDD7 /* Jsonify.h */,
+				543FBA34B94D11394AD4B763A01048AC /* Jsonify.swift */,
+				6D48ED0D8081E2524A1B91E8744EE8D2 /* JsonifyModel.swift */,
+				05436882CE7437FEC46CC965A9F85CCD /* Support Files */,
+			);
+			name = Jsonify;
+			path = Jsonify;
+			sourceTree = "<group>";
+		};
+		B6C5AA79114BBBA7D767AF79FBCDCED6 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				6E43DCD659588CD4ECACBA2636E00F25 /* Cocoa.framework */,
+				B3FAB2118D22CFD15271E990B43E49D3 /* Foundation.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		D0910E5B2DF10BEF3A5F85DDACB277AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				244C186B8B049D96E4CD70D0135D8399 /* Fire */,
+				92A8E38C3C056549CB87EDBFBE9381E9 /* Jsonify */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8C4CAEE4C30E8518A7D7412F598CB12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECFB4865FDA94465D0A3C11786D18AB3 /* Jsonify.framework */,
+				B6C5AA79114BBBA7D767AF79FBCDCED6 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		36AAAFB276B501E6D9BA9F141240285C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03619D724D5F2450111614C852C13F2 /* Pods-BingWallpapers-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C0BE6BB53E61DBD330900A418C0534 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F38D1E0ADB35BBA5907F4AD99997AEBE /* Jsonify-umbrella.h in Headers */,
+				3D2F361C65FC6970DC3DFCDE8A64198C /* Jsonify.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B70873176525947B4941158B5FB55AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66E7CD264C61F78AB2771C3006EA843 /* Fire-umbrella.h in Headers */,
+				C40F278C1C2BEF01F5566609223BA9DA /* Fire.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04B08483700D1B47E58D93084F28C230 /* Fire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A64B10CBA44757C93B67CD8474F5EDF6 /* Build configuration list for PBXNativeTarget "Fire" */;
+			buildPhases = (
+				0C32EF97013CAA6958ADB134DA04CA28 /* Sources */,
+				1176A53FD6F3E81D68EF18EF1CD10E32 /* Frameworks */,
+				7B70873176525947B4941158B5FB55AD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02BBF0A01A85B1310F6DF3BF0A2EAA76 /* PBXTargetDependency */,
+			);
+			name = Fire;
+			productName = Fire;
+			productReference = 14BEA5FC86F4D98E6259C15BC8AA0D53 /* Fire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9FCBA89BA6358AB0865AB1C0A2FAA068 /* Jsonify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC897563D6952C3F72B92BF67DDC95F /* Build configuration list for PBXNativeTarget "Jsonify" */;
+			buildPhases = (
+				CCC62DD89A3034B868A55D9784E3D871 /* Sources */,
+				97577631202AB658AEE841A5802F98C4 /* Frameworks */,
+				53C0BE6BB53E61DBD330900A418C0534 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jsonify;
+			productName = Jsonify;
+			productReference = 37FE059F29BFF73C4654FB0D5A61BFA5 /* Jsonify.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D456E21057A490810B7180A27AABCB23 /* Pods-BingWallpapers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE45FC710FD9774D8D82C76B5846488 /* Build configuration list for PBXNativeTarget "Pods-BingWallpapers" */;
+			buildPhases = (
+				8BFD284EDC051990AF54BCFDA61B9FEE /* Sources */,
+				507431033B306B25C1A58AC15B5A74E2 /* Frameworks */,
+				36AAAFB276B501E6D9BA9F141240285C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36D902D0B6B71620A891B182A412FFD1 /* PBXTargetDependency */,
+				F636A86F54BA4F5DE0E603F6E38DA331 /* PBXTargetDependency */,
+			);
+			name = "Pods-BingWallpapers";
+			productName = "Pods-BingWallpapers";
+			productReference = C347611B9DA3036446B6F7EB16AEF037 /* Pods_BingWallpapers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 761019B7C4A2F37B8EA406348D16FDD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04B08483700D1B47E58D93084F28C230 /* Fire */,
+				9FCBA89BA6358AB0865AB1C0A2FAA068 /* Jsonify */,
+				D456E21057A490810B7180A27AABCB23 /* Pods-BingWallpapers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C32EF97013CAA6958ADB134DA04CA28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41B010DA6E2FB83E9402E369942C0B4 /* API.swift in Sources */,
+				4314A7A6E4D392F73FAB6FC1E3957E3D /* FileDescriptor.swift in Sources */,
+				0B9EC4FEE4393C7EA863CA95E281C3ED /* Fire-dummy.m in Sources */,
+				5D538741F9C5B67DE8B4B4B0C65E87FD /* Fire.swift in Sources */,
+				C10EF443122ECA593D5246E6ED0B2B34 /* Helper.swift in Sources */,
+				0598C5EBA881C5538DD970059CC6B89E /* Values.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BFD284EDC051990AF54BCFDA61B9FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6DEE49F3E0FAB6B2F9F4AE5A3973DD2 /* Pods-BingWallpapers-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC62DD89A3034B868A55D9784E3D871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB96DFC209E80A9FB2135179B70F821 /* Jsonify-dummy.m in Sources */,
+				7CB703A2B3341A9BF29F2095A71FDEED /* Jsonify.swift in Sources */,
+				283189D922874E4F3DAA6337EB2E010D /* JsonifyModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02BBF0A01A85B1310F6DF3BF0A2EAA76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Jsonify;
+			target = 9FCBA89BA6358AB0865AB1C0A2FAA068 /* Jsonify */;
+			targetProxy = 57696D79BC2658686FE630AC3773A1A8 /* PBXContainerItemProxy */;
+		};
+		36D902D0B6B71620A891B182A412FFD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Fire;
+			target = 04B08483700D1B47E58D93084F28C230 /* Fire */;
+			targetProxy = 9D8A5B4D64D272C18BD4F20B71883196 /* PBXContainerItemProxy */;
+		};
+		F636A86F54BA4F5DE0E603F6E38DA331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Jsonify;
+			target = 9FCBA89BA6358AB0865AB1C0A2FAA068 /* Jsonify */;
+			targetProxy = E4B17659FBF092ED67FED8BF4115BE26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1066CFB425EA865C2842208B43C1BF07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66A50A2971C77106E69D5965F5EC7241 /* Fire.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Fire/Fire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Fire/Fire.modulemap";
+				PRODUCT_MODULE_NAME = Fire;
+				PRODUCT_NAME = Fire;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		21FB5B81E9585087FF9F784996135E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5684B343F52754D952BF752EDE83C0C9 /* Pods-BingWallpapers.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-BingWallpapers/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-BingWallpapers/Pods-BingWallpapers.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		268B5E5E3E11C649DDD449B840E4F6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F7ADDE4355ED57E874354538E1A8F9A /* Jsonify.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify/Jsonify-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Jsonify/Jsonify.modulemap";
+				PRODUCT_MODULE_NAME = Jsonify;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29B26B13CD653548561AA754213D7364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34B688E71E5D71DF72FBD2983D93CEF6 /* Pods-BingWallpapers.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-BingWallpapers/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-BingWallpapers/Pods-BingWallpapers.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		596CC5813FA58E50C7B961E31A4DD65B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F7ADDE4355ED57E874354538E1A8F9A /* Jsonify.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Jsonify/Jsonify-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jsonify/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Jsonify/Jsonify.modulemap";
+				PRODUCT_MODULE_NAME = Jsonify;
+				PRODUCT_NAME = Jsonify;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		885072FBE917853E9C621EA32511C1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E574923E2959CFEF4FEBC7B272DBC6AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F7FA90E2970CE4F70007D900C9EDC579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66A50A2971C77106E69D5965F5EC7241 /* Fire.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Fire/Fire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Fire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Fire/Fire.modulemap";
+				PRODUCT_MODULE_NAME = Fire;
+				PRODUCT_NAME = Fire;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885072FBE917853E9C621EA32511C1DA /* Debug */,
+				E574923E2959CFEF4FEBC7B272DBC6AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC897563D6952C3F72B92BF67DDC95F /* Build configuration list for PBXNativeTarget "Jsonify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268B5E5E3E11C649DDD449B840E4F6F8 /* Debug */,
+				596CC5813FA58E50C7B961E31A4DD65B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A64B10CBA44757C93B67CD8474F5EDF6 /* Build configuration list for PBXNativeTarget "Fire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7FA90E2970CE4F70007D900C9EDC579 /* Debug */,
+				1066CFB425EA865C2842208B43C1BF07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE45FC710FD9774D8D82C76B5846488 /* Build configuration list for PBXNativeTarget "Pods-BingWallpapers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FB5B81E9585087FF9F784996135E31 /* Debug */,
+				29B26B13CD653548561AA754213D7364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
