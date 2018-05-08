@@ -51,6 +51,7 @@ class ViewController: NSViewController {
                 url.append(bing.images[0].url)
                 Fire.build(HTTPMethod: .GET, url: url).fireForData { (data, resp) in
                     self.imageView.image = NSImage(data: data!)!
+                    self.textLabel.stringValue = bing.images[0].copyright
                 }
         }
     }
@@ -72,9 +73,7 @@ class ViewController: NSViewController {
         try! wkspace.setDesktopImageURL(url, for: NSScreen.screens[0], options: screenoptions!)
     }
         
+    @IBOutlet weak var textLabel: NSTextField!
     @IBOutlet weak var imageView: NSImageView!
-    func setButton(_ sender: NSButton) {
-        
-    }
 }
 
