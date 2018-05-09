@@ -69,8 +69,11 @@ class ViewController: NSViewController {
         let url = URL(fileURLWithPath: FileManager.default.homeDirectoryForCurrentUser.absoluteString).appendingPathComponent("wallapaper.jpeg")
         try! Data(imageView.image!.tiffRepresentation!).write(to: url)
         let wkspace = NSWorkspace.shared
-        let screenoptions = wkspace.desktopImageOptions(for: NSScreen.screens[0])
-        try! wkspace.setDesktopImageURL(url, for: NSScreen.screens[0], options: screenoptions!)
+        for screen in NSScreen.screens {
+            print("PLEB")
+            let screenoptions = wkspace.desktopImageOptions(for: screen)
+            try! wkspace.setDesktopImageURL(url, for: screen, options: screenoptions!)
+        }
     }
         
     @IBOutlet weak var textLabel: NSTextField!
