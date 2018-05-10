@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9886077620A2D159005BA98E /* BingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9886077520A2D159005BA98E /* BingViewController.swift */; };
 		98A0B71E209F02B900FAF396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A0B71D209F02B900FAF396 /* AppDelegate.swift */; };
-		98A0B720209F02B900FAF396 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A0B71F209F02B900FAF396 /* ViewController.swift */; };
 		98A0B722209F02B900FAF396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98A0B721209F02B900FAF396 /* Assets.xcassets */; };
 		98A0B725209F02B900FAF396 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A0B723209F02B900FAF396 /* Main.storyboard */; };
 		A8C6A08C49931E94B60DB18B /* Pods_BingWallpapers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19119D074626DC736A793727 /* Pods_BingWallpapers.framework */; };
@@ -17,9 +17,9 @@
 /* Begin PBXFileReference section */
 		19119D074626DC736A793727 /* Pods_BingWallpapers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BingWallpapers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22332E5D6A02D7B933B70A5E /* Pods-BingWallpapers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingWallpapers.release.xcconfig"; path = "Pods/Target Support Files/Pods-BingWallpapers/Pods-BingWallpapers.release.xcconfig"; sourceTree = "<group>"; };
+		9886077520A2D159005BA98E /* BingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingViewController.swift; sourceTree = "<group>"; };
 		98A0B71A209F02B900FAF396 /* BingWallpapers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingWallpapers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A0B71D209F02B900FAF396 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98A0B71F209F02B900FAF396 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98A0B721209F02B900FAF396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98A0B724209F02B900FAF396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98A0B726209F02B900FAF396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,11 +69,11 @@
 			isa = PBXGroup;
 			children = (
 				98A0B71D209F02B900FAF396 /* AppDelegate.swift */,
-				98A0B71F209F02B900FAF396 /* ViewController.swift */,
 				98A0B721209F02B900FAF396 /* Assets.xcassets */,
 				98A0B723209F02B900FAF396 /* Main.storyboard */,
 				98A0B726209F02B900FAF396 /* Info.plist */,
 				98A0B727209F02B900FAF396 /* BingWallpapers.entitlements */,
+				9886077520A2D159005BA98E /* BingViewController.swift */,
 			);
 			path = BingWallpapers;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98A0B720209F02B900FAF396 /* ViewController.swift in Sources */,
+				9886077620A2D159005BA98E /* BingViewController.swift in Sources */,
 				98A0B71E209F02B900FAF396 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
