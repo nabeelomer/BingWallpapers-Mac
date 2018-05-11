@@ -41,6 +41,8 @@ class ViewController: NSViewController {
         let tooltips: BingTooltips
     }
     
+    var fileName: String = ""
+    
     func downloadImage() -> Void {
         Fire.build(HTTPMethod: .GET, url: "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-IN")
             .fireForString { (str, resp) -> Void in
@@ -52,6 +54,7 @@ class ViewController: NSViewController {
                 Fire.build(HTTPMethod: .GET, url: url).fireForData { (data, resp) in
                     self.imageView.image = NSImage(data: data!)!
                     self.textLabel.stringValue = bing.images[0].copyright
+                    self.fileName = bing.images[0].startdate
                 }
         }
     }
@@ -66,11 +69,12 @@ class ViewController: NSViewController {
         }
     }
     @IBAction func wallpaperAction(_ sender: Any) {
-        let url = URL(fileURLWithPath: FileManager.default.homeDirectoryForCurrentUser.absoluteString).appendingPathComponent("wallapaper.jpeg")
+        let url = FileManager.default.urls(for: .downloadsDirectory, in: FileManager.SearchPathDomainMask.userDomainMask)[0].appendingPathComponent("BingWallpaper-\(fileName).jpeg")
+        
         try! Data(imageView.image!.tiffRepresentation!).write(to: url)
+        
         let wkspace = NSWorkspace.shared
         for screen in NSScreen.screens {
-            print("PLEB")
             let screenoptions = wkspace.desktopImageOptions(for: screen)
             try! wkspace.setDesktopImageURL(url, for: screen, options: screenoptions!)
         }
