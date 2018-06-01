@@ -44,7 +44,7 @@ class ViewController: NSViewController {
     var fileName: String = ""
     
     func downloadImage() -> Void {
-        Fire.build(HTTPMethod: .GET, url: "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-IN")
+        Fire.build(HTTPMethod: .GET, url: "https://www.bing.com/HPImageArchive.aspx?format=js&idx=-1&n=1&mkt=en-IN")
             .fireForString { (str, resp) -> Void in
                 var url = "https://www.bing.com/"
                 print(resp?.statusCode as Any)
@@ -68,7 +68,8 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-    @IBAction func wallpaperAction(_ sender: Any) {
+    
+    @IBAction func wallpaperSetter(_ sender: Any) {
         let url = FileManager.default.urls(for: .downloadsDirectory, in: FileManager.SearchPathDomainMask.userDomainMask)[0].appendingPathComponent("BingWallpaper-\(fileName).jpeg")
         
         try! Data(imageView.image!.tiffRepresentation!).write(to: url)
