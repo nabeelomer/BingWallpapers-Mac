@@ -41,26 +41,19 @@ class ViewController: NSViewController {
         let tooltips: BingTooltips
     }
     
-    var fileName: String = ""
+    var bingData: Bing?
     
     func downloadImage() -> Void {
         Fire.build(HTTPMethod: .GET, url: "https://www.bing.com/HPImageArchive.aspx?format=js&idx=-1&n=1&mkt=en-IN")
             .fireForString { (str, resp) -> Void in
-                var url = "https://www.bing.com/"
-                print(resp?.statusCode as Any)
-                let decoder = JSONDecoder()
-                let bing = try! decoder.decode(Bing.self, from: str!.data)
-                url.append(bing.images[0].url)
-                Fire.build(HTTPMethod: .GET, url: url).fireForData { (data, resp) in
-                    self.imageView.image = NSImage(data: data!)!
-                    self.textLabel.stringValue = bing.images[0].copyright
-                    self.fileName = bing.images[0].startdate
+                self.bingData = try! JSONDecoder().decode(Bing.self, from: str!.data)
+                Fire.build(HTTPMethod: .GET, url: "https://www.bing.com/\(self.bingData!.images[0].url)").fireForData { (data, resp) in
+                    self.view.layer!.contents = NSImage(data: data!)!
+                    self.textLabel.stringValue = self.bingData!.images[0].copyright
+//                    self.fileName = self.bingData.images[0].startdate
                 }
+
         }
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        downloadImage()
     }
 
     override var representedObject: Any? {
@@ -69,10 +62,17 @@ class ViewController: NSViewController {
         }
     }
     
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        self.view.wantsLayer = true
+        downloadImage()
+    }
+    
+    
     @IBAction func wallpaperSetter(_ sender: Any) {
-        let url = FileManager.default.urls(for: .downloadsDirectory, in: FileManager.SearchPathDomainMask.userDomainMask)[0].appendingPathComponent("BingWallpaper-\(fileName).jpeg")
+        let url = FileManager.default.urls(for: .cachesDirectory, in: FileManager.SearchPathDomainMask.userDomainMask)[0].appendingPathComponent("BingWallpaper-\(self.bingData!.images[0].startdate).jpeg")
         
-        try! Data(imageView.image!.tiffRepresentation!).write(to: url)
+        try! Data((self.view.layer!.contents! as! NSImage).tiffRepresentation!).write(to: url)
         
         let wkspace = NSWorkspace.shared
         for screen in NSScreen.screens {
@@ -81,7 +81,30 @@ class ViewController: NSViewController {
         }
     }
         
+    @IBAction func helpClick(_ sender: Any) {
+        let controller = NSViewController()
+        controller.view = NSView(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(290), height: CGFloat(50)))
+        
+        let popover = NSPopover()
+        popover.contentViewController = controller
+        popover.contentSize = controller.view.frame.size
+        
+        popover.behavior = .transient
+        popover.animates = true
+        
+        popover.appearance = NSAppearance(named: NSAppearance.Name.vibrantDark)
+        
+        let txt = NSTextField(frame: NSMakeRect(10,25,50,22))
+        txt.stringValue = "Press ⌘S to set the image as your wallpaper."
+        txt.textColor = NSColor.white.withAlphaComponent(0.95)
+        txt.backgroundColor = NSColor.clear
+        txt.isEditable = false;
+        txt.isBordered = false
+        controller.view.addSubview(txt)
+        txt.sizeToFit()
+        popover.show(relativeTo: (sender as AnyObject).bounds, of: sender as! NSView, preferredEdge: NSRectEdge.maxY)
+        
+    }
     @IBOutlet weak var textLabel: NSTextField!
-    @IBOutlet weak var imageView: NSImageView!
 }
 
