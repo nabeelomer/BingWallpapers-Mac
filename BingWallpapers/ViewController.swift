@@ -50,7 +50,6 @@ class ViewController: NSViewController {
                 Fire.build(HTTPMethod: .GET, url: "https://www.bing.com/\(self.bingData!.images[0].url)").fireForData { (data, resp) in
                     self.view.layer!.contents = NSImage(data: data!)!
                     self.textLabel.stringValue = self.bingData!.images[0].copyright
-//                    self.fileName = self.bingData.images[0].startdate
                 }
 
         }
